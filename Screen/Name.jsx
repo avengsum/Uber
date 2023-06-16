@@ -1,11 +1,11 @@
 import { useState } from "react"
-import { TextInput , View } from "react-native"
+import { SafeAreaView, TextInput , View ,Text } from "react-native"
 
 const Name = () => {
     const [first, setFirst] = useState('')
     const [last, setLast] = useState('')
     return(
-        <View>
+        <View style={styles.container}>
             <Text>What's your name?</Text>
             <TextInput
             value={first}
@@ -20,5 +20,11 @@ const Name = () => {
         </View>
     )
 }
+
+const styles = StyleSheet.create({
+    container:{
+        marginTop:StatusBar.currentHeight
+    }
+  })
 
 export default Name

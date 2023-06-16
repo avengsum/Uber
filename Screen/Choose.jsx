@@ -24,7 +24,7 @@ const Choose = () => {
                 </View>
                 <Text className="text-white ml-2 mt-4 text-md max-w-[400px]">By clicking a social option you may recieve an SMS for
                     verification.Message and data rates may apply</Text>
-                <View className="flex items-center mt-[400px] justify-center  ">
+                <View className="flex items-center mt-[400px] justify-center">
                 <TouchableOpacity className="bg-black px-14 py-5" >
                     <Text className="text-white text-xl" >Next</Text>
                 </TouchableOpacity>

@@ -4,12 +4,13 @@ import Login from './Screen/Login';
 import { SafeAreaView , StyleSheet} from 'react-native';
 import Choose from './Screen/Choose';
 import OTP from './Screen/OTP';
+import Name from './Screen/Name';
 
 export default function App() {
   return (
     <SafeAreaView >
     <View>
-      <OTP />
+      <Name />
       <StatusBar style="auto" />
     </View>
     </SafeAreaView>
