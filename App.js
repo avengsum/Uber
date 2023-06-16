@@ -1,13 +1,14 @@
 import { StatusBar } from 'expo-status-bar';
 import { Text, View } from 'react-native';
 import Login from './Screen/Login';
-import { SafeAreaView } from 'react-native';
+import { SafeAreaView , StyleSheet} from 'react-native';
+import Choose from './Screen/Choose';
 
 export default function App() {
   return (
-    <SafeAreaView style={styles.container}>
+    <SafeAreaView >
     <View>
-      <Login />
+      <Choose />
       <StatusBar style="auto" />
     </View>
     </SafeAreaView>
@@ -15,9 +16,5 @@ export default function App() {
   );
 }
 
-const styles = StyleSheet.create({
-  container:{
-      marginTop:StatusBar.currentHeight
-  }
-})
+
 

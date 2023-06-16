@@ -1,15 +1,17 @@
 import { TouchableOpacity } from "react-native";
-import { View , SafeAreaView , Text  } from "react-native";
+import { View , SafeAreaView , Text , StyleSheet , StatusBar } from "react-native";
+import { AntDesign } from '@expo/vector-icons';
 
 const Choose = () => {
     return (
-        <SafeAreaView>
-            <View>
-                <Text>Choose an account</Text>
+        <SafeAreaView style={styles.container}>
+            <View className="h-screen flex bg-slate-700">
+            <AntDesign name="arrowleft" size={24} color="white" />
+                <Text className="text-2xl font-bold text-white" >Choose an account</Text>
                 <View>
-                    <Image  />
+                <AntDesign name="facebook-square" size={24} color="black" />
                     <Text>Facebook</Text>
-                    <Image />
+                <AntDesign name="google" size={24} color="black" />
                     <Text>Google</Text>
                 </View>
                 <Text>By clicking a social option you may recieve an SMS for
@@ -21,6 +23,12 @@ const Choose = () => {
         </SafeAreaView>
     )
 }
+
+const styles = StyleSheet.create({
+    container:{
+        marginTop:StatusBar.currentHeight
+    }
+  })
 
 
 
