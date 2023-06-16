@@ -1,10 +1,11 @@
 import { TouchableOpacity } from "react-native"
 import { View } from "react-native"
+import { MaterialCommunityIcons } from '@expo/vector-icons';
 
 const Term = () => {
     return(
-        <View>
-            <Image />
+        <View style={styles.container}>
+            <MaterialCommunityIcons name="human-greeting-variant" size={24} color="black" />
             <Text>By tapping the arrow below,you agree to Uber's
                 Term of Use and acknowledge that you have read 
                 the Privacy Policy</Text>
@@ -18,5 +19,11 @@ const Term = () => {
         </View>
     )
 }
+
+const styles = StyleSheet.create({
+    container:{
+        marginTop:StatusBar.currentHeight
+    }
+  })
 
 export default Term
