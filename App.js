@@ -6,12 +6,13 @@ import Choose from './Screen/Choose';
 import OTP from './Screen/OTP';
 import Name from './Screen/Name';
 import Term from './Screen/Term';
+import Home from './Screen/Home';
 
 export default function App() {
   return (
     <SafeAreaView >
     <View>
-      <Term />
+      <Home />
     <StatusBar style="auto" />
     </View>
     </SafeAreaView>
